@@ -37,6 +37,12 @@ li {
 .flex_1 {
   flex: 1;
 }
+
+
+.container{
+  padding: 50px 0;
+}
+
 .row {
   width: 100%;
   max-width: 800px;
@@ -45,6 +51,15 @@ li {
 
 .text--purple {
   color: #6030b1;
+}
+
+.section:nth-child(even){
+  background-color:bisque;
+}
+
+
+.section__title{
+  margin-bottom: 20px;
 }
 
 /* navigation bar */
@@ -148,4 +163,18 @@ nav {
 
 .about-me__img {
   width: 100%;
+}
+
+/* tech - stack */
+
+.language__img{
+  width: 100%;
+  max-width:100px;
+}
+
+.language__img--wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   width: 25%;
 }
