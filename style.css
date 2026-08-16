@@ -228,7 +228,9 @@ nav {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color:;
+  background-color:black;
+  opacity: 0;
+  transition: opacity 300ms ease;
 }
 
 .project:hover .project__wrapper:before {
