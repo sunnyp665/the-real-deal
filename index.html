@@ -5,19 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>sunny</title>
   <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/4b6411b34a.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/4b6411b34a.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <section id="about-me">
   <nav>
-    <div class="peronal__logo">sunny</div>
+    <div class="personal__logo">sunny</div>
     <ul class="nav__link--list">
-      <li>
-        <a href=""class="nav__link--anchor link__hover-effect link__hover-effect--black">languages</a>
+      <li class="nav__link">
+      <a href="#languages"class="nav__link--anchor link__hover-effect link__hover-effect--black">languages</a>
       </li>
-        <a href=""class="nav__link--anchor link__hover-effect link__hover-effect--black">projects</a>
+      <li class="nav__link">
+        <a href="#projects"class="nav__link--anchor link__hover-effect link__hover-effect--black">projects</a>
       </li>
-        <a href=""class="nav__link--anchor nav__link--anchor-primary">contact
+      <li class="nav__link">
+        <a href="mailto:email@email.com" class="nav__link--anchor nav__link--anchor-primary">contact
         </a>
       </li>
   </nav>
@@ -45,7 +47,7 @@
          </div>
         
     </div>
-    <figure class="about-me__img-- container">
+    <figure class="about-me__img--container">
       <img src="./assets/undraw_websites.svg" class="about-me__img" alt="">
     </figure>
   </div>
@@ -53,7 +55,7 @@
 <section id="languages">
 <div class="container">
   <div class="row">
-    <h1 class="section__title"></h1>This is my <span class="text--purple">technology stack.</span></h1>
+    <h1 class="section__title">This is my <span class="text--purple">technology stack.</span></h1>
     <div class="language__list">
       <div class="language">
         <figure class="language__img--wrapper">
@@ -104,14 +106,28 @@
         <span class="language__name">HTML</span>
          </div>
 </section>
-<section id="projects">
+<section id="project">
   <div class="container">
     <div class="row">
       <h1 classs="section__title">Here are some of my <span class="text--purple">projects</span></h1>
-      <ul class="projects__lists">
-        <li class="projects">
-          <div class="projects__wrapper">
+      <ul class="project__lists">
+        <li class="project">
+          <div class="project__wrapper">
             <img src="./assets/loopit.png" class="project__img" alt="">
+            <div class="project__description">
+              <h3 class="project__decription--tile">car ssles project</h3>
+              <h4 class="project__description--sub-title"> HTML, CSS, Javascript, vue, vuex</h4>
+              <p class="project__decription--para"> my projects all my hard work on dispay. </p>
+              <div class="project__description--links">
+                <a href="www.github.com/yourlink" target="_blank" class="project__description--link">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="www.yourwebsite.com" class="project__description--link">
+                  <i class="fas fa-link"></i>
+                </a>
+                
+              </div>
+            </div>
           </div>
         </li>
       </ul>
