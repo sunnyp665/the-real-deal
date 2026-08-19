@@ -175,26 +175,89 @@ nav {
   transform: scale(1.2);
   padding: 10px;
 }
+.about-me__info--title{
+  margin-bottom: 16px;
+  animation: fade-up 600ms 400ms backwards;
+}
 
 .about-me__info--para {
   font-size: 20px;
   margin-bottom: 28px;
+  animation: fade-up 600ms 400ms backwards;
 }
 
 .about_me--link {
   font-size: 20px;
   color: #ae1d1d;
-   padding: 0 16px;
+  padding: 0 16px;
+  animation: fade-up 600ms 400ms backwards;
+}
+.about_me--links{
+  animation: fade-up 600ms 400ms backwards;
 }
 
+@keyframes fade-up{
+  0%{
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100%{
+    opacity: 1;
+    transform: translayeY(0);
+  }
+}
 .about-me__img--container {
-  flex: 100;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.about-me__img{
+  width: 100%;
+}
+
+.about-me__picture--mask{
+  width: 100px;
+  height: 100px;
+  border-radius:50%;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.16);
+  margin-bottom: 28px;
+  animation: animate-profile-picture 800ms 1s backwards ;
+
+}
+
+@keyframes animate-profile-picture{
+  0%{
+    transform: scale(0);
+  }
+  80%{
+    transform: scale(1.1);
+  }
+  100%{
+    transform: scale(1);  
+  }
+}
+
+.about-me__img--container{
+  flex: 1;
   display: flex;
   align-items: center;
 }
 
 .about-me__img {
   width: 100%;
+  animation: fade-in 1200ms 800ms backwards;
+}
+
+@keyframes fade-in{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+
 }
 
 /* tech - stack */
@@ -221,6 +284,7 @@ nav {
   align-items: center;
   width: 25%;
   padding: 25px 16px;
+  position: center;
 }
 
 .language__list {
@@ -457,4 +521,26 @@ padding-right: 30px;
   .nav__link:not(:last-child){
     display: none;
   }
+
+  .project__description{
+    padding: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .project__decription--para{
+    display: none;
+  }
+
+.project__decription--link{
+  display: flex;
+  justify-content: center;
+ }
+
+
+.project__decription--sub-title{
+  text-align: center;
+  margin: 12px 0;
+ }
+
 }
