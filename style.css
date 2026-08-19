@@ -176,8 +176,8 @@ nav {
   padding: 0;
 
   /* improving my own picture */
-  transform: scale(1.2);
-  padding: 10px;
+  
+  
 }
 .about-me__info--title{
   margin-bottom: 16px;
@@ -267,8 +267,8 @@ nav {
 /* tech - stack */
 
 .language__img {
-  width: 700%;
-  max-width: 1000px;
+  width: 100%;
+  max-width: 100px;
   transition: all 300ms ease;
 }
 
