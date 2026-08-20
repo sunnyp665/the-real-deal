@@ -555,3 +555,38 @@ footer {
     margin: 12px 0;
   }
 }
+
+.dance-word {
+  display: inline-block;
+  opacity: 0;
+  animation: dance-in 700ms ease forwards;
+}
+
+.dance-word:nth-child(1) {
+  animation-delay: 300ms;
+}
+
+.dance-word:nth-child(2) {
+  animation-delay: 450ms;
+}
+
+.dance-word:nth-child(3) {
+  animation-delay: 500ms;
+}
+
+@keyframes dance-in {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) rotate(-10deg) scale(0.8);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateY(-8px) rotate(5deg) scale(1.1);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) rotate(0) scale(1);
+  }
+}
