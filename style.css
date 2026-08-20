@@ -205,7 +205,7 @@ nav {
   }
   100% {
     opacity: 1;
-    transform: translayeY(0);
+    transform: translateY(0);
   }
 }
 .about-me__img--container {
@@ -257,6 +257,23 @@ nav {
   }
   100% {
     opacity: 1;
+  }
+}
+
+.wave{
+  display: inline-block;
+  animation:animate-wave 500ms infinite ease-in-out;
+}
+
+@keyframes animate-wave{
+  0{
+    transform: rotate(0);
+  }
+  50%{
+    transform: rotate(30deg);
+  }
+  100%{
+    transform: rotate(0);
   }
 }
 
